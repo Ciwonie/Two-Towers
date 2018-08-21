@@ -1,8 +1,8 @@
-var http = require('http');
+const http = require('http');
 
-var PORTONE = 7000;
+const PORTONE = 7000;
 
-var PORTTWO = 7500;
+const PORTTWO = 7500;
 
 var niceRequest = (req, res) => {
     res.end("Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me " 
@@ -10,7 +10,7 @@ var niceRequest = (req, res) => {
 } 
 
 var badRequest = (req, res) => {
-    re.end("Why are you the way you are? Go back to the annex." + req.url)
+    res.end("Why are you the way you are? Go back to the annex." + req.url)
 }
 
 var serverOne = http.createServer(niceRequest);
