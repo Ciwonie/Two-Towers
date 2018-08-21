@@ -5,11 +5,12 @@ var PORTONE = 7000;
 var PORTTWO = 7500;
 
 var niceRequest = (req, res) => {
-    response.end("You're Greeeeeeat " + req.url)
+    res.end("Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me " 
+    + req.url)
 } 
 
 var badRequest = (req, res) => {
-    response.end("You're not so greeeeeeaat " + req.url)
+    re.end("Why are you the way you are? Go back to the annex." + req.url)
 }
 
 var serverOne = http.createServer(niceRequest);
